@@ -2,9 +2,12 @@
 
 export async function AuthFetchdata(method, url, body, form) {
 
-   const fullUrl = `http://localhost:5000${url}`;
+  //  const fullUrl = `http://localhost:5000${url}`;
   
   //  const fullUrl = `https://rest-coin-backend.vercel.app${url}`;
+
+     const fullUrl = `https://flight-reservation-backend-auth.vercel.app${url}`;
+
   
   const options = {
     method: method,
@@ -35,10 +38,11 @@ export async function AuthFetchdata(method, url, body, form) {
 
 export async function Fetchdata(method, url, body, form) {
 
-  const fullUrl = `http://localhost:8000${url}`;
+  // const fullUrl = `http://localhost:8000${url}`;
  
  //  const fullUrl = `https://rest-coin-backend.vercel.app${url}`;
  
+ const fullUrl = `https://flight-reservation-backend-registration.vercel.app${url}`;
  const options = {
    method: method,
    body: form ? body : JSON.stringify(body),
